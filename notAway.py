@@ -12,6 +12,7 @@ def typing_value_in_time(value, waiting_time):
 
 def open_notepad_and_create_new_tab(path):
     subprocess.call([path])
+    time.sleep(2)
     keyboard.press_and_release("ctrl+n")
 
 open_notepad_and_create_new_tab(r"C:\Program Files\Notepad++\notepad++.exe")
